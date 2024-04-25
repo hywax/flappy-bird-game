@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "baseUrl": ".",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "resolveJsonModule": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noEmit": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
+  },
+  "types": [
+    "vite/client",
+    "node"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "**/__tests__/**/*"
+  ]
+}

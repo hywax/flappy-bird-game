@@ -1,0 +1,46 @@
+{
+  "name": "@hywax/flappy-bird-game",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "",
+  "author": {
+    "name": "hywax",
+    "url": "https://github.com/hywax"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hywax/phaser-game-template.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "release": "pnpm lint && pnpm test && pnpm build && changelogen --release --push",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "phaser": "^3.80.1",
+    "phaser-font-plugin": "^0.1.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.15.0",
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@types/node": "^20.12.7",
+    "@vitest/coverage-v8": "^1.5.0",
+    "changelogen": "^0.5.5",
+    "eslint": "^9.1.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10",
+    "vitest": "^1.5.0"
+  },
+  "lint-staged": {
+    "*.ts": "pnpm run lint"
+  }
+}
